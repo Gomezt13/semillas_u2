@@ -71,13 +71,13 @@ label <- fb %>%
                , opts = list(hjust = 0)
                 ) %>% 
   include_text(value = "plots"
-               , position = c(0.5, 3.5)
+               , position = c(0.25, 3.7)
                , size = 6
                , color = "black"
                , opts = list(hjust = 0)
   ) %>% 
   include_text(value = "induccion-germinacion"
-               , position = c(1, 3.5)
+               , position = c(0.75, 3.7)
                , size = 6
                , color = "black"
                , opts = list(hjust = 0)
