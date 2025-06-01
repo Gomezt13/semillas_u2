@@ -1,0 +1,9 @@
+---
+title: "Maíz choclero (INIA 603)"
+format: html
+---
+
+# Quiénes Somos
+
+Somos una organización dedicada a la creación de contenido educativo y científico.
+
