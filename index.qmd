@@ -1,9 +1,0 @@
----
-title: "Bienvenidos"
-format: html
----
-
-# Página Principal
-
-¡Bienvenido a nuestro sitio web creado con **Quarto**!  
-Utiliza el menú superior para navegar por las diferentes secciones.
