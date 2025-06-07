@@ -2,12 +2,12 @@
 
 source("https://inkaverse.com/setup.r")
 
-url <- "https://docs.google.com/spreadsheets/d/12HD5TUu2mDQ2YbjxtKw6sNQqbi1519lyLADSrtXNTs8/edit?gid=0#gid=0"
+url <- "https://docs.google.com/spreadsheets/d/12HD5TUu2mDQ2YbjxtKw6sNQqbi1519lyLADSrtXNTs8/edit?gid=150361058#gid=150361058"
 
 gs <- as_sheets_id(url)
 
 fb <- gs %>% 
-  range_read("fb")
+  range_read("re")
 
 font <- c("Courgette", "Tillana")
 
@@ -15,41 +15,60 @@ huito_fonts(font)
 
 label <- fb %>% 
   mutate(name = paste0('"', "Garbanzo", '"')) %>% 
-  label_layout(size = c(6, 3)
+  label_layout(size = c(4, 1)
                    , border_color = "orangered4"
                    ) %>% 
-  include_image(
-    value = "https://github.com/Gomezt13/semillas_u2/blob/main/ETIQUETAS/MONOCOTILEDONEAS/image.png?raw=true"
-    , size = c(6, 1)
-    , position = c(3, 2.5)
-    ) %>% 
-  include_image(
-    value = "https://cce.untrm.edu.pe/img/logo.png"
-    , size = c(2.2, 1.9)
-    , position = c(1.2, 2.6)
-    ) %>%
-  include_image(
-    value = "https://grupof.com.py/wp-content/uploads/2023/10/GRUPO-F_logo-1021x1024.png"
-    , size = c(1, 1)
-    , position = c(5.5, 2.6)
-    ) %>%
   include_barcode(
     value = "qrcode"
-    , size = c(2, 2)
-    , position = c(5, 1)
-    ) %>% 
-  include_text(value = "common"
-                   , position = c(2, 1.5)
+    , size = c(1, 1)
+    , position = c(3.3, 0.5)
+  ) %>%
+  include_text(value = "fer"
+                   , position = c(1.25, 0.5)
                    , size = 9
                    , color = "black"
                    , font[1] 
-                    ) %>% 
-  include_text(value = "scientist"
-                   , position = c(2, 0.8)
-                   , size = 9
-                   , color = "dodgerblue4"
-                   , font[2]
-                    )
+                    ) 
 label %>% label_print()
 
-label %>% label_print(mode = "c")
+label1 <- fb %>% 
+  mutate(name = paste0('"', "Garbanzo", '"')) %>% 
+  label_layout(size = c(6, 2)
+               , border_color = "orangered4"
+  ) %>% 
+  include_image(
+    value = "https://yt3.googleusercontent.com/ytc/AIdro_ka-7D7fE6y102_Z6Dtw6omq5k_y2MkHu_AQhI3CXSKGQ=s900-c-k-c0x00ffffff-no-rj"
+    , size = c(1, 1)
+    , position = c(5, 0.75)
+  ) %>% 
+  include_image(
+    value = "https://upload.wikimedia.org/wikipedia/commons/9/95/Logo-2016-solo-ok.png"
+    , size = c(1, 1)
+    , position = c(1, 0.75)
+  ) %>%
+  include_text(value = "Muestrario de semillas monocotiledóneas"
+               , position = c(3, 1.5)
+               , size = 8.5
+               , color = "black"
+               , font[1] 
+  ) %>% 
+  include_text(value = "Grupo F"
+               , position = c(3, 0.8)
+               , size = 9
+               , color = "dodgerblue4"
+               , font[2]
+  )
+label1 %>% label_print()
+
+# Crear una lista con varias etiquetas, por ejemplo:
+etiquetas <- c(
+  rep(list(label), 4),   # 4 etiquetas del tipo label
+  rep(list(label1), 2)   # 2 etiquetas del tipo label1
+)
+
+# Generar la página
+pagina <- label_page(etiquetas, ncol = 2, nrow = 3)
+
+# Imprimir la página
+label_print(pagina)
+

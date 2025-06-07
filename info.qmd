@@ -1,0 +1,185 @@
+---
+title: "EVALUACIÓN DE LA ESCARIFICACIÓN MEDIANTE TRATAMIENTO TÉRMICO Y APLICACIÓN DE GIBERELINA (GA) EN LA GERMINACIÓN DE SEMILLAS DE GARBANZO (*Cicer arietinum*)"
+format: html
+---
+
+## INTRODUCCIÓN
+El garbanzo (Cicer arietinum) es una leguminosa que desempeña un papel crucial en la seguridad alimentaria y la economía de muchas regiones del mundo. Originario del Suroeste de Turquía, su cultivo se ha extendido a lo largo de Asia, África y América, destacándose por su capacidad para tolerar condiciones de estrés hídrico, lo que lo convierte en un cultivo ideal para áreas agrícolas con limitaciones de agua, más del 90% de la producción mundial de garbanzo se concentra en Asia, especialmente en India, Pakistán y Turquía, lo que subraya su relevancia a nivel global, tanto como fuente alimentaria como por sus beneficios en la mejora de la calidad del suelo (@VARGAS2021).
+
+La germinación de las semillas de garbanzo puede verse afectada por la dormancia, un mecanismo de protección que impide que la semilla germine bajo condiciones no óptimas, esta dormancia física se debe, en gran medida, a la dureza de la testa de la semilla, lo que dificulta la penetración de agua y ralentiza el proceso germinativo, para superar esta barrera, es común utilizar métodos de escarificación, como el tratamiento térmico y la aplicación de hormonas, que aceleran la germinación y mejoran la uniformidad del proceso, en este sentido, la giberelina (GA), una hormona vegetal que estimula la germinación, ha demostrado ser eficaz para romper la dormancia de diversas especies vegetales, incluyendo las leguminosas (@FLORESM2020).
+
+Este estudio tuvo como objetivo evaluar el impacto de dos tratamientos en la germinación de semillas de garbanzo: un tratamiento térmico, en el que las semillas fueron expuestas a agua caliente durante 5 minutos, y un tratamiento hormonal, que consistió en la aplicación de giberelina. El objetivo principal fue determinar el porcentaje de germinación bajo cada uno de estos tratamientos, evaluando también el tiempo necesario para que las semillas comenzaran a germinar. A través de la medición del índice de germinación, se buscó cuantificar la velocidad y uniformidad del proceso germinativo en cada caso, con la intención de identificar cuál de los tratamientos resulta más efectivo para optimizar la germinación y, por ende, mejorar el rendimiento del cultivo.
+
+## MATERIALES Y MÉTODOS
+
+###	Selección e instalación del material vegetal
+
+Las semillas de Cicer arietinum L. fueron adquiridas en el mercado modelo de la ciudad de Chachapoyas. Se realizó una selección previa de las semillas, eligiendo aquellasque no presenten daños ni deterioros. Posteriormente, se distribuyeron 25 semillas en cada uno de los 12 tapers, sumando un total de 300 semillas. Estos tapers fueron utilizados para evaluar la escarificación de las semillas de garbanzo bajo condiciones controladas, utilizando dos tratamientos distintos:
+
+1.	Tratamiento hormonal: Las semillas fueron remojadas en una solución de giberelinas (GA) para evaluar su efecto en la germinación.
+
+2.	Tratamiento térmico: Las semillas fueron expuestas a agua previamente hervida a una temperatura de 80°C, con el fin de evaluar el impacto del calor sobre la germinación.
+
+El objetivo de este experimento fue comparar la efectividad de ambos métodos de escarificación y, posteriormente, medir los índices, determinar el porcentaje y el tiempo medio de germinación obtenidos en cada tratamiento. Además, se incluyó un tratamiento testigo para contrastar los resultados obtenidos con los métodos aplicados.
+
+###	Elaboración de etiquetas
+
+```{r}
+#| echo: false
+source("https://inkaverse.com/setup.r")
+url <- "https://docs.google.com/spreadsheets/d/1HULLeNVuUZ9JhBPeuIET7slsfKvgOy3W0z_Cre3ns5w/edit?gid=876483088#gid=876483088"
+gs <- as_sheets_id(url)
+  
+fb <- gs %>% 
+  range_read("fb")
+
+font <- c("Courgette", "Tillana")
+
+huito_fonts(font)
+
+label <- fb %>% 
+  mutate(name = paste0('"', "Garbanzo", '"')) %>% 
+  label_layout(size = c(5, 5)
+               , border_color = "darkgreen"
+               ) %>% 
+  include_image(
+    value = "https://huito.inkaverse.com/img/scale.pdf"
+    , size = c(5, 1)
+    , position = c(2.5, 0.5)
+  ) %>% 
+  include_image(
+    value = "https://goldenriseagri.com/wp-content/uploads/2022/09/chick-peas-1.png"
+    , size = c(1.5, 3)
+    , position = c(4.1, 1.5)
+    ) %>% 
+  include_image(
+    value = "https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?cs=srgb&dl=pexels-francesco-ungaro-396547.jpg&fm=jpg"
+    , size = c(5, 5)
+    , position = c(2.5, 6)
+    ) %>% 
+  include_image(
+    value = "https://cce.untrm.edu.pe/img/logo.png"
+    , size = c(2.2, 1.9)
+    , position = c(1.2, 4.6)
+    ) %>%
+  include_image(
+    value = "https://grupof.com.py/wp-content/uploads/2023/10/GRUPO-F_logo-1021x1024.png"
+    , size = c(1, 1)
+    , position = c(4.5, 4.6)
+  ) %>%
+  include_barcode(
+     value = "qrcode"
+     , size = c(2, 2)
+     , position = c(4, 3)
+     ) %>% 
+  include_text(value = "Familia:"
+               , position = c(0.5, 3.1)
+               , size = 6
+               , color = "black"
+               , opts = list(hjust = 0)
+              ) %>% 
+    include_text(value = "Fabaceae"
+                 , position = c(1, 2.8)
+                 , size = 6
+                 , color = "black"
+                 , opts = list(hjust = 0)
+                ) %>% 
+  include_text(value = "Genero:"
+               , position = c(0.5, 2.5)
+               , size = 6
+               , color = "black"
+               , opts = list(hjust = 0)
+              ) %>% 
+  include_text(value = "Cicer"
+               , position = c(1, 2.2)
+               , size = 6
+               , color = "black"
+               , opts = list(hjust = 0)
+                ) %>% 
+  include_text(value = "plots"
+               , position = c(0.25, 3.9)
+               , size = 6
+               , color = "black"
+               , opts = list(hjust = 0)
+  ) %>% 
+  include_text(value = "induccion-germinacion"
+               , position = c(0.25, 3.6)
+               , size = 6
+               , color = "black"
+               , opts = list(hjust = 0)
+  ) %>% 
+  include_text(value = "Cicer arietinum"
+               , position = c(2, 1.8)
+               , size = 9
+               , color = "black"
+               , font[1] 
+              ) %>% 
+  include_text(value = "name"
+               , position = c(2, 1.3)
+               , size = 9
+               , color = "black"
+               , font[2]
+              )
+label %>% label_print()
+```
+
+
+### plástico de 1/4 de kilo. 
+
+- ⁠Pepel toalla. 
+- ⁠Agua destilada. 
+- ⁠Jeringa de 20 ml. 
+- ⁠Termómetro.
+- ⁠Jarra hervidora.  
+- ⁠Guantes. 
+- ⁠Pinzas.
+- ⁠Etiquetas.
+
+###	Procedimiento
+
+Paso 1: Se desinfectaron las semillas sumergiéndolas en una solución de hipoclorito de sodio, con el fin de eliminar posibles contaminantes.
+
+Paso 2: Las semillas se dejaron secar a temperatura ambiente durante un periodo adecuado para garantizar que estuvieran completamente secas antes de proceder.
+
+Paso 3: Se seleccionaron las semillas más vigorosas, eligiendo un total de 300 unidades para el experimento.
+
+Paso 4: Se prepararon los tapers para los tratamientos, distribuyendo 4 tapers por tratamiento. En cada taper se colocó papel toalla en la base, que posteriormente se humedeció con 20 ml de agua destilada estéril (autoclavada) para proporcionar un ambiente adecuado para la germinación. En total, se utilizaron 12 tapers con papel toalla humedecido para asegurar las condiciones controladas de humedad.
+
+Paso 5: Se distribuyeron las semillas en los tapers, asignando 100 unidades por tratamiento. Los tratamientos fueron:
+
+- T1: Tratamiento hormonal (GA)
+- T2: Tratamiento térmico (agua hervida a 80°C)
+- T3: Tratamiento control (testigo)
+
+Cada tratamiento se distribuyó en 4 tapers, con 25 semillas por taper. Las semillas se colocaron uniformemente, asegurando que los cotiledones estuvieran visibles, utilizando pinzas esterilizadas para su manejo.
+
+Paso 6: Los tapers fueron cerrados y etiquetados de acuerdo con el tratamiento correspondiente, lo que permitió su identificación durante la evaluación y análisis del éxito de los métodos de escarificación seleccionados.
+
+Paso 7: Los tapers se almacenaron en condiciones controladas en el área de preparación de muestras del Laboratorio de Fisiología y Biotecnología Vegetal (FISIOBVEG) del INDES CES. Durante un periodo de 6 días, se mantuvo la humedad en el medio de crecimiento (papel toalla en los tapers) y se evaluaron las variables de germinación. Los datos obtenidos fueron registrados en un archivo de Google Sheets para su posterior procesamiento y análisis.
+
+### Diseño experimental
+
+Para este estudio, se empleó un diseño experimental completamente al azar (DCA) con dos tratamientos y un control: tratamiento hormonal (GA) y tratamiento térmico. Cada tratamiento fue evaluado con 4 repeticiones, lo que sumó un total de 12 unidades experimentales. Para la comparación de medias entre los tratamientos, se utilizó la prueba de Tukey, con el fin de determinar las diferencias significativas entre los resultados obtenidos.
+
+##	RESULTADOS
+
+### Semillas germinadas
+
+![*Figura 1*. Logo de R en alta resolución.](figure1.jpg)
+
+### Tiempo promedio de germinación
+
+![Wayne Rasband, desarrollador principal del proyecto](figure2.jpg)
+
+### Índice de sincronización
+
+![Wayne Rasband, desarrollador principal del proyecto](figure3.jpg)
+
+### Germinabilidad
+
+![Wayne Rasband, desarrollador principal del proyecto](figure4.jpg)
+
+##	DISCUCIÓN 
+
+##	CONCLUSIONES 
+

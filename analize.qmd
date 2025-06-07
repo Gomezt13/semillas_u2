@@ -1,0 +1,262 @@
+---
+title: "Germinación"
+author: "Euler G"
+format: html
+---
+
+# Configuración
+
+```{r}
+source("https://inkaverse.com/setup.r")
+library(tidyverse)
+library(GerminaR)
+cat("Project: ", getwd())
+cat("CPU cores available: ", parallel::detectCores())
+RhpcBLASctl::blas_set_num_threads(parallel::detectCores()*0.8)
+session_info()
+
+```
+# Importar datos
+
+```{r}
+gs <- "https://docs.google.com/spreadsheets/d/1HULLeNVuUZ9JhBPeuIET7slsfKvgOy3W0z_Cre3ns5w/edit?gid=876483088#gid=876483088" %>% 
+  as_sheets_id()
+
+fb <- gs %>% 
+  range_read("fb") %>% 
+  mutate(across(1:Tratamiento, ~as.factor(.))) %>%
+  dplyr::select(!D5) %>% 
+  as.data.frame()
+
+str(fb)
+
+```
+# Indice de germinación 
+
+```{r}
+gsm <- ger_summary(SeedN = "seeds"
+                   , evalName = "d"
+                   , data = fb
+                   )
+  gsm %>% kable()
+
+```
+## Semillas germinadas
+
+```{r}
+
+# analysis of variance
+
+av <- aov(grs ~ Tratamiento, data = gsm)
+anova(av)
+
+# mean comparison test
+
+mc_grs <- ger_testcomp(aov = av
+                       , comp = c("Tratamiento")
+                       , type = "snk")
+
+# data result
+
+mc_grs$table %>% 
+   kable(caption = "Mean germination time comparison")
+
+p1 <- mc_grs$table %>% 
+   plot_smr(data = .
+       , type = "bar" 
+       , x = "Tratamiento"
+       , y = "grs"
+       , ylimits = c(0, 26, 2)
+       , sig = "sig"
+       , error = "ste"
+       )
+
+b1 <- ggplot(gsm, aes(x = Tratamiento, y = grs)) +
+  geom_boxplot(fill = "lightblue", color = "darkblue") +
+  labs(title = "Boxplot de semillas germinadas por Tratamiento",
+       x = "Tratamiento",
+       y = "Germinated seeds (grs)") +
+  theme_minimal()
+
+plotv1 <- list(p1, b1) %>% 
+  plot_grid(plotlist = .
+            , rel_heights = c(1, 1)
+            , labels = "AUTO"
+            , nrow = 1
+            )
+
+plotv1 %>% ggsave2(plot = .
+                   , filename = "figure1.jpg"
+                   , units = "cm"
+                   , width = 30
+                   , height = 10
+                   )
+
+plotv1
+
+```
+
+
+
+
+## Tiempo medio de germinacion (MGT)
+
+```{r}
+
+# analysis of variance
+
+av1 <- aov(mgt ~ Tratamiento, data = gsm)
+anova(av1)
+
+# mean comparison test
+
+mc_mgt <- ger_testcomp(aov = av1
+                       , comp = c("Tratamiento")
+                       , type = "snk")
+
+# data result
+
+mc_mgt$table %>% 
+   kable(caption = "Mean germination time")
+
+p2 <- mc_mgt$table %>% 
+   plot_smr(data = .
+       , type = "bar" 
+       , x = "Tratamiento"
+       , y = "mgt"
+       , ylimits = c(0, 3, 0.5)
+       , sig = "sig"
+       , error = "ste"
+      )
+b2 <- ggplot(gsm, aes(x = Tratamiento, y = mgt)) +
+  geom_boxplot(fill = "lightblue", color = "darkblue") +
+  labs(title = "Boxplot de tiempo medio de germinacion por Tratamiento",
+       x = "Tratamiento",
+       y = "Mean germination time (mgt)") +
+  theme_minimal()
+
+plotv2 <- list(p2, b2) %>% 
+  plot_grid(plotlist = .
+            , rel_heights = c(1, 1)
+            , labels = "AUTO"
+            , nrow = 1
+            )
+
+plotv2 %>% ggsave2(plot = .
+                   , filename = "figure2.jpg"
+                   , units = "cm"
+                   , width = 30
+                   , height = 10
+                   )
+
+plotv2
+
+```
+
+## Índice de sincronización (SYN)
+
+```{r}
+
+# analysis of variance
+
+av2 <- aov(syn ~ Tratamiento, data = gsm)
+anova(av2)
+
+# mean comparison test
+
+mc_syn <- ger_testcomp(aov = av2
+                       , comp = c("Tratamiento")
+                       , type = "snk")
+
+# data result
+
+mc_syn$table %>% 
+   kable(caption = "Synchronization Index")
+
+p3 <- mc_syn$table %>% 
+   plot_smr(data = .
+       , type = "bar" 
+       , x = "Tratamiento"
+       , y = "syn"
+       , ylimits = c(0, 1, 0.1)
+       , sig = "sig"
+       , error = "ste"
+      )
+b3 <- ggplot(gsm, aes(x = Tratamiento, y = mgt)) +
+  geom_boxplot(fill = "lightblue", color = "darkblue") +
+  labs(title = "Boxplot de Synchronization Index por Tratamiento",
+       x = "Tratamiento",
+       y = "Synchronization Index (mgt)") +
+  theme_minimal()
+
+plotv3 <- list(p3, b3) %>% 
+  plot_grid(plotlist = .
+            , rel_heights = c(1, 1)
+            , labels = "AUTO"
+            , nrow = 1
+            )
+
+plotv3 %>% ggsave2(plot = .
+                   , filename = "figure3.jpg"
+                   , units = "cm"
+                   , width = 30
+                   , height = 10
+                   )
+
+plotv3
+
+```
+
+## Germinability
+
+```{r}
+
+# analysis of variance
+
+av3 <- aov(grp ~ Tratamiento, data = gsm)
+anova(av3)
+
+# mean comparison test
+
+mc_grp <- ger_testcomp(aov = av3
+                       , comp = c("Tratamiento")
+                       , type = "snk")
+
+# data result
+
+mc_grp$table %>% 
+   kable(caption = "Germinabilidad")
+
+p4 <- mc_grp$table %>% 
+   plot_smr(data = .
+       , type = "bar" 
+       , x = "Tratamiento"
+       , y = "grp"
+       , ylimits = c(0, 110, 10)
+       , sig = "sig"
+       , error = "ste"
+      )
+b4 <- ggplot(gsm, aes(x = Tratamiento, y = mgt)) +
+  geom_boxplot(fill = "lightblue", color = "darkblue") +
+  labs(title = "Boxplot de tiempo medio de germinacion por Tratamiento",
+       x = "Tratamiento",
+       y = "Germinability (grp)") +
+  theme_minimal()
+
+plotv4 <- list(p4, b4) %>% 
+  plot_grid(plotlist = .
+            , rel_heights = c(1, 1)
+            , labels = "AUTO"
+            , nrow = 1
+            )
+
+plotv4 %>% ggsave2(plot = .
+                   , filename = "figure4.jpg"
+                   , units = "cm"
+                   , width = 30
+                   , height = 10
+                   )
+
+plotv4
+
+```
