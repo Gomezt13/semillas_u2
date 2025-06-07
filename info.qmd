@@ -20,6 +20,7 @@ Las semillas de Cicer arietinum L. fueron adquiridas en el mercado modelo de la 
 
 2.	Tratamiento térmico: Las semillas fueron expuestas a agua previamente hervida a una temperatura de 80°C, con el fin de evaluar el impacto del calor sobre la germinación.
 
+
 El objetivo de este experimento fue comparar la efectividad de ambos métodos de escarificación y, posteriormente, medir los índices, determinar el porcentaje y el tiempo medio de germinación obtenidos en cada tratamiento. Además, se incluyó un tratamiento testigo para contrastar los resultados obtenidos con los métodos aplicados.
 
 ###	Elaboración de etiquetas
@@ -127,8 +128,10 @@ label %>% label_print()
 ```
 
 
-### plástico de 1/4 de kilo. 
+### Materiales
 
+- Semilla de Cicer arietinum L. (300 unidades) 
+- ⁠Tapers deplstico de 1/4 de kilo. 
 - ⁠Pepel toalla. 
 - ⁠Agua destilada. 
 - ⁠Jeringa de 20 ml. 
@@ -172,15 +175,15 @@ Para este estudio, se empleó un diseño experimental completamente al azar (DCA
 
 ### Tiempo promedio de germinación
 
-![Wayne Rasband, desarrollador principal del proyecto](figure2.jpg)
+![*Figura 2*. L](figure2.jpg)
 
 ### Índice de sincronización
 
-![Wayne Rasband, desarrollador principal del proyecto](figure3.jpg)
+![*Figura 3*. Efecto de tratamientos hormonales y térmicos sobre el índice de sincronización de la germinación en semillas de garbanzo (*Cicer arietinum* L.)](figure3.jpg)
 
 ### Germinabilidad
 
-![Wayne Rasband, desarrollador principal del proyecto](figure4.jpg)
+![*Figura 4*. Efecto de tratamientos hormonales y térmicos sobre la germinabilidad en semillas de garbanzo (*Cicer arietinum* L.)](figure4.jpg)
 
 ##	DISCUCIÓN 
 
