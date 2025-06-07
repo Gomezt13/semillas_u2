@@ -3,7 +3,7 @@ title: "Presentación de resultados de experimento de escarificación"
 about:
   id: me
   template: broadside
-  image: https://www.viaempresa.cat/uploads/s1/26/58/45/23/istock-1473230852.jpeg
+  image: whatsapp.jpg
 
 ---
 
