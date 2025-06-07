@@ -163,7 +163,7 @@ Paso 6: Los tapers fueron cerrados y etiquetados de acuerdo con el tratamiento c
 
 Paso 7: Los tapers se almacenaron en condiciones controladas en el área de preparación de muestras del Laboratorio de Fisiología y Biotecnología Vegetal (FISIOBVEG) del INDES CES. Durante un periodo de 6 días, se mantuvo la humedad en el medio de crecimiento (papel toalla en los tapers) y se evaluaron las variables de germinación. Los datos obtenidos fueron registrados en un archivo de Google Sheets para su posterior procesamiento y análisis.
 
-![*Figura 2*. a) Distribucion de las semillas de garbanzo (*Cicer arietinum* L.) en los tapers, b) Etiquetado de las muestras experimentales, c) Almacenamiento de las miestra experimentales en un lugar seguro](figure-10.jpg)
+![*Figura 2*. a) Distribucion de las semillas de garbanzo (*Cicer arietinum* L.) en los tapers, b) Etiquetado de las muestras experimentales, c) Almacenamiento de las miestra experimentales en un lugar seguro](Figure-10.jpg)
 
 ### Diseño experimental
 
