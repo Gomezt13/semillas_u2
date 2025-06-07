@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "EI Poder de la Inteligencia Artificial en la Agronomía",
+    "title": "Presentación de resultados de experimento de escarificación",
     "section": "",
-    "text": "Integrantes:\n\nBarbosa Saldaña Lili Maricela\nGomez Torres Euler\nJulca Celiz Nilson Yoel\nSantillan Puerta Jaime Alexander\nVargas Rojas Sheyla MAyli\n\nCiclo: IX\nDocente: Flavio Lozano Isla, PhD (c)\nCurso: Producción y tecnología de semillas.\nObjetivo: Reconocer e identificar la importancia del uso del aprendizaje automático y la inteligencia artificial en la agricultura.\n\n\n  \n\n\nThanks for checking out my web site!"
+    "text": "Integrantes:\n\nBarbosa Saldaña Lili Maricela\nGomez Torres Euler\nJulca Celiz Nilson Yoel\nSantillan Puerta Jaime Alexander\nVargas Rojas Sheyla MAyli\n\nCiclo: IX\nDocente: Flavio Lozano Isla, PhD (c)\nCurso: Producción y tecnología de semillas.\nObjetivo: Presentar y analizar los resultados obtenidos del experimento de escarificación de semillas, con el fin de evaluar la eficacia de diferentes métodos en la mejora de la germinación, comparar su desempeño y proponer recomendaciones para su aplicación en la producción agrícola..\n\n\n  \n\n\nThanks for checking out my web site!"
   },
   {
     "objectID": "info.html",
@@ -75,5 +75,12 @@
     "title": "Germinación",
     "section": "Germinability",
     "text": "Germinability\n\n\n# analysis of variance\n\nav3 &lt;- aov(grp ~ Tratamiento, data = gsm)\nanova(av3)\n## Analysis of Variance Table\n## \n## Response: grp\n##             Df  Sum Sq Mean Sq F value Pr(&gt;F)\n## Tratamiento  2  450.67  225.33  0.8958 0.4418\n## Residuals    9 2264.00  251.56\n\n# mean comparison test\n\nmc_grp &lt;- ger_testcomp(aov = av3\n                       , comp = c(\"Tratamiento\")\n                       , type = \"snk\")\n\n# data result\n\nmc_grp$table %&gt;% \n   kable(caption = \"Germinabilidad\")\n\n\nGerminabilidad\n\n\n\n\n\n\n\n\n\n\n\n\n\nTratamiento\ngrp\nstd\nr\nste\nse\nmin\nmax\nsig\n\n\n\n\nTestigo\n81\n26.407070\n4\n13.203535\n7.930251\n44\n100\na\n\n\nTratamiento hormonal (GA)\n89\n6.000000\n4\n3.000000\n7.930251\n84\n96\na\n\n\nTratamiento térmico\n96\n4.618802\n4\n2.309401\n7.930251\n92\n100\na\n\n\n\n\n\np4 &lt;- mc_grp$table %&gt;% \n   plot_smr(data = .\n       , type = \"bar\" \n       , x = \"Tratamiento\"\n       , y = \"grp\"\n       , ylimits = c(0, 110, 10)\n       , sig = \"sig\"\n       , error = \"ste\"\n      )\nb4 &lt;- ggplot(gsm, aes(x = Tratamiento, y = mgt)) +\n  geom_boxplot(fill = \"lightblue\", color = \"darkblue\") +\n  labs(title = \"Boxplot de tiempo medio de germinacion por Tratamiento\",\n       x = \"Tratamiento\",\n       y = \"Germinability (grp)\") +\n  theme_minimal()\n\nplotv4 &lt;- list(p4, b4) %&gt;% \n  plot_grid(plotlist = .\n            , rel_heights = c(1, 1)\n            , labels = \"AUTO\"\n            , nrow = 1\n            )\n\nplotv4 %&gt;% ggsave2(plot = .\n                   , filename = \"figure4.jpg\"\n                   , units = \"cm\"\n                   , width = 30\n                   , height = 10\n                   )\n\nplotv4"
+  },
+  {
+    "objectID": "info.html#conclusiones",
+    "href": "info.html#conclusiones",
+    "title": "EVALUACIÓN DE LA ESCARIFICACIÓN MEDIANTE TRATAMIENTO TÉRMICO Y APLICACIÓN DE GIBERELINA (GA) EN LA GERMINACIÓN DE SEMILLAS DE GARBANZO (Cicer arietinum)",
+    "section": "CONCLUSIONES",
+    "text": "CONCLUSIONES"
   }
 ]

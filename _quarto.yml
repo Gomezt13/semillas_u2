@@ -3,7 +3,7 @@ project:
   output-dir: "."
   
 website:
-  title: "GRUPO C"
+  title: "GRUPO F"
   navbar:
     left:
       - href: index.qmd

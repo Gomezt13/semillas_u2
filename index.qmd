@@ -1,5 +1,5 @@
 ---
-title: "EI Poder de la Inteligencia Artificial en la Agronomía"
+title: "Presentación de resultados de experimento de escarificación"
 about:
   id: me
   template: broadside
@@ -22,7 +22,7 @@ about:
 
 **Curso**: Producción y tecnología de semillas. 
 
-**Objetivo**: Reconocer e identificar la importancia del uso del aprendizaje automático y la inteligencia artificial en la agricultura. 
+**Objetivo**: Presentar y analizar los resultados obtenidos del experimento de escarificación de semillas, con el fin de evaluar la eficacia de diferentes métodos en la mejora de la germinación, comparar su desempeño y proponer recomendaciones para su aplicación en la producción agrícola.. 
 
 
 :::
