@@ -171,11 +171,11 @@ Para este estudio, se empleó un diseño experimental completamente al azar (DCA
 
 ### Semillas germinadas
 
-![*Figura 1*. Logo de R en alta resolución.](figure1.jpg)
+![*Figura 1*. Efecto de tratamientos hormonales y térmicos sobre el número de semillas germinadas de garbanzo (*Cicer arietinum* L..](figure1.jpg)
 
 ### Tiempo promedio de germinación
 
-![*Figura 2*. L](figure2.jpg)
+![*Figura 2*. Efecto de tratamientos hormonales y térmicos sobre el tiempo medio de germinación en semillas de garbanzo (*Cicer arietinum* L.)](figure2.jpg)
 
 ### Índice de sincronización
 

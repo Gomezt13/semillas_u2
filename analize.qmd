@@ -123,7 +123,7 @@ p2 <- mc_mgt$table %>%
        , type = "bar" 
        , x = "Tratamiento"
        , y = "mgt"
-       , ylimits = c(0, 3, 0.5)
+       , ylimits = c(0, 2.5, 0.5)
        , sig = "sig"
        , error = "ste"
       )
@@ -177,11 +177,11 @@ p3 <- mc_syn$table %>%
        , type = "bar" 
        , x = "Tratamiento"
        , y = "syn"
-       , ylimits = c(0, 1, 0.1)
+       , ylimits = c(0, 0.8, 0.1)
        , sig = "sig"
        , error = "ste"
       )
-b3 <- ggplot(gsm, aes(x = Tratamiento, y = mgt)) +
+b3 <- ggplot(gsm, aes(x = Tratamiento, y = syn)) +
   geom_boxplot(fill = "lightblue", color = "darkblue") +
   labs(title = "Boxplot de índice de sincronización por Tratamiento",
        x = "Tratamiento",
@@ -235,7 +235,7 @@ p4 <- mc_grp$table %>%
        , sig = "sig"
        , error = "ste"
       )
-b4 <- ggplot(gsm, aes(x = Tratamiento, y = mgt)) +
+b4 <- ggplot(gsm, aes(x = Tratamiento, y = grp)) +
   geom_boxplot(fill = "lightblue", color = "darkblue") +
   labs(title = "Boxplot de germinabilidad por Tratamiento",
        x = "Tratamiento",
