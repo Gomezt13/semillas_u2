@@ -10,6 +10,8 @@ website:
         text: Home
       - href: info.qmd
         text: Informe
+      - href: analize.qmd
+        text: Analisis
     tools:
       - icon: twitter
         href: https://doi.org/10.3390/rs15051463

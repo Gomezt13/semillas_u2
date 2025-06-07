@@ -1,6 +1,5 @@
 ---
-title: "Germinación"
-author: "Euler G"
+title: "Analisis de Germinación"
 format: html
 ---
 
@@ -184,9 +183,9 @@ p3 <- mc_syn$table %>%
       )
 b3 <- ggplot(gsm, aes(x = Tratamiento, y = mgt)) +
   geom_boxplot(fill = "lightblue", color = "darkblue") +
-  labs(title = "Boxplot de Synchronization Index por Tratamiento",
+  labs(title = "Boxplot de índice de sincronización por Tratamiento",
        x = "Tratamiento",
-       y = "Synchronization Index (mgt)") +
+       y = "Synchronization Index (syn)") +
   theme_minimal()
 
 plotv3 <- list(p3, b3) %>% 
@@ -238,7 +237,7 @@ p4 <- mc_grp$table %>%
       )
 b4 <- ggplot(gsm, aes(x = Tratamiento, y = mgt)) +
   geom_boxplot(fill = "lightblue", color = "darkblue") +
-  labs(title = "Boxplot de tiempo medio de germinacion por Tratamiento",
+  labs(title = "Boxplot de germinabilidad por Tratamiento",
        x = "Tratamiento",
        y = "Germinability (grp)") +
   theme_minimal()

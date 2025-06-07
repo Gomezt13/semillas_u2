@@ -8,7 +8,7 @@
 
 <meta name="author" content="Euler G">
 
-<title>Germinación – GRUPO C</title>
+<title>Analisis de Germinación – GRUPO F</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -113,7 +113,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">GRUPO C</span>
+    <span class="navbar-title">GRUPO F</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -129,6 +129,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="./info.html"> 
 <span class="menu-text">Informe</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./analize.html" aria-current="page"> 
+<span class="menu-text">Analisis</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -165,7 +169,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Germinación</h1>
+<h1 class="title">Analisis de Germinación</h1>
 </div>
 
 
@@ -220,7 +224,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", : el
 comando ejecutado '"quarto"
-TMPDIR=C:/Users/Euler/AppData/Local/Temp/RtmpsJUlHI/file47fc3d732e01 -V' tiene
+TMPDIR=C:/Users/Euler/AppData/Local/Temp/Rtmp4ItU2K/file3130248c4144 -V' tiene
 el estatus 1</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
@@ -1067,9 +1071,9 @@ el estatus 1</code></pre>
 <span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>      )</span>
 <span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>b3 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(gsm, <span class="fu">aes</span>(<span class="at">x =</span> Tratamiento, <span class="at">y =</span> mgt)) <span class="sc">+</span></span>
 <span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">fill =</span> <span class="st">"lightblue"</span>, <span class="at">color =</span> <span class="st">"darkblue"</span>) <span class="sc">+</span></span>
-<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Boxplot de Synchronization Index por Tratamiento"</span>,</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Boxplot de índice de sincronización por Tratamiento"</span>,</span>
 <span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Tratamiento"</span>,</span>
-<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Synchronization Index (mgt)"</span>) <span class="sc">+</span></span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Synchronization Index (syn)"</span>) <span class="sc">+</span></span>
 <span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
 <span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>plotv3 <span class="ot">&lt;-</span> <span class="fu">list</span>(p3, b3) <span class="sc">%&gt;%</span> </span>
@@ -1197,7 +1201,7 @@ el estatus 1</code></pre>
 <span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>      )</span>
 <span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>b4 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(gsm, <span class="fu">aes</span>(<span class="at">x =</span> Tratamiento, <span class="at">y =</span> mgt)) <span class="sc">+</span></span>
 <span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">fill =</span> <span class="st">"lightblue"</span>, <span class="at">color =</span> <span class="st">"darkblue"</span>) <span class="sc">+</span></span>
-<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Boxplot de tiempo medio de germinacion por Tratamiento"</span>,</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Boxplot de germinabilidad por Tratamiento"</span>,</span>
 <span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Tratamiento"</span>,</span>
 <span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Germinability (grp)"</span>) <span class="sc">+</span></span>
 <span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
