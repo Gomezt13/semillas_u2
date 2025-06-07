@@ -24,7 +24,10 @@ El objetivo de este experimento fue comparar la efectividad de ambos métodos de
 
 ###	Elaboración de etiquetas
 
-```{r}
+Durante la elaboración de las etiquetas para el experimento, se utilizó el paquete [**`huito`**](https://huito.inkaverse.com/) en R, una herramienta diseñada para generar etiquetas agrícolas de forma automatizada y personalizable. La información registrada previamente en el [cuaderno de campo](https://docs.google.com/spreadsheets/d/1HULLeNVuUZ9JhBPeuIET7slsfKvgOy3W0z_Cre3ns5w/edit?gid=559924372#gid=559924372) en una hoja de cálculo de Google Sheets, el cual contiene el número de tratamiento, tipo de escarificación, fecha de siembra y observaciones relevantes. El cuaderno de campo fue organizada y cargada en R mediante el paquete [**`googlesheets4`**](https://googlesheets4.tidyverse.org/). Para enriquecer visualmente las etiquetas y facilitar su identificación en campo, se incorporaron imágenes referenciales obtenidas de internet (Logos), representativas de cada tratamiento o especie estudiada. Lo cual permitió generar etiquetas claras, estandarizadas y funcionales, optimizando el proceso de organización y seguimiento del experimento.
+
+
+```{r nombre-del-chunk, message=FALSE, warning=FALSE, results='hide'}
 #| echo: false
 source("https://inkaverse.com/setup.r")
 url <- "https://docs.google.com/spreadsheets/d/1HULLeNVuUZ9JhBPeuIET7slsfKvgOy3W0z_Cre3ns5w/edit?gid=876483088#gid=876483088"
