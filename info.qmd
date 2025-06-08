@@ -154,6 +154,8 @@ Paso 2: Las semillas se dejaron secar a temperatura ambiente durante un periodo 
 
 Paso 3: Se seleccionaron las semillas más vigorosas, eligiendo un total de 300 unidades para el experimento.
 
+![*Figura 1*. a) Distribucion de las semillas de garbanzo (*Cicer arietinum* L.) en los tapers, b) Etiquetado de las muestras experimentales, c) Almacenamiento de las miestra experimentales en un lugar seguro](Figure-11.jpg)
+
 Paso 4: Se prepararon los tapers para los tratamientos, distribuyendo 4 tapers por tratamiento. En cada taper se colocó papel toalla en la base, que posteriormente se humedeció con 20 ml de agua destilada estéril (autoclavada) para proporcionar un ambiente adecuado para la germinación. En total, se utilizaron 12 tapers con papel toalla humedecido para asegurar las condiciones controladas de humedad.
 
 Paso 5: Se distribuyeron las semillas en los tapers, asignando 100 unidades por tratamiento. Los tratamientos fueron:
@@ -180,7 +182,7 @@ En este estudio se evaluó el índice de germinación de las semillas de garbanz
 
 ### Semillas germinadas
 
-![*Figura 1*. Efecto de tratamientos hormonales y térmicos sobre el número de semillas germinadas de garbanzo (*Cicer arietinum* L..](figure1.jpg)
+![*Figura 3*. Efecto de tratamientos hormonales y térmicos sobre el número de semillas germinadas de garbanzo (*Cicer arietinum* L..](figure1.jpg)
 
 Las semillas germinadas con los 3 tratamientos son muy similares,  las letras “a” sobre las barras indican que no hay diferencias estadísticamente significativas entre los tratamientos. Es decir, los tres tratamientos no difieren entre sí en cuanto a la cantidad promedio de semillas germinadas. Aunque el tratamiento térmico parece tener una media un poco más alta, pero estadísticamente no es diferente del resto. 
 
@@ -189,7 +191,7 @@ Aunque el promedio de semillas germinadas no son significativamente diferentes e
 
 ### Tiempo promedio de germinación
 
-![*Figura 2*. Efecto de tratamientos hormonales y térmicos sobre el tiempo medio de germinación en semillas de garbanzo (*Cicer arietinum* L.)](figure2.jpg)
+![*Figura 4*. Efecto de tratamientos hormonales y térmicos sobre el tiempo medio de germinación en semillas de garbanzo (*Cicer arietinum* L.)](figure2.jpg)
 
 En este gráfico se puede observar  que el tratamiento térmico aparentemente reduce el tiempo promedio de germinación, las letras "a" sobre las barras indican que estadísticamente no existen diferencias significativas entre los tratamientos. Además, el tratamiento térmico parece acelerar ligeramente la germinación, sin embargo esa diferencia no es suficiente para considerarse estadísticamente diferente  a los otros tratamientos.
 
@@ -197,7 +199,7 @@ El boxplot indica que el  tratamiento térmico no solo tiende a acelerar la germ
 
 ### Índice de sincronización
 
-![*Figura 3*. Efecto de tratamientos hormonales y térmicos sobre el índice de sincronización de la germinación en semillas de garbanzo (*Cicer arietinum* L.)](figure3.jpg)
+![*Figura 5*. Efecto de tratamientos hormonales y térmicos sobre el índice de sincronización de la germinación en semillas de garbanzo (*Cicer arietinum* L.)](figure3.jpg)
 
 En este gráfico se observa que los tratamientos testigo y hormonal presentaron los valores medios de sincronización más elevados. El tratamiento térmico mostró el valor medio más bajo, lo que se prevé, una germinación menos sincronizada. Sin embargo, el análisis estadístico no encontró diferencias significativas entre los tratamientos , lo que sugiere  que estadísticamente , todos los tratamientos presentan un comportamiento similar en cuanto a sincronización.
 
@@ -206,7 +208,7 @@ En cuanto al boxplot, este nuestra  diferencias  en la distribución de los dato
 
 ### Germinabilidad
 
-![*Figura 4*. Efecto de tratamientos hormonales y térmicos sobre la germinabilidad en semillas de garbanzo (*Cicer arietinum* L.)](figure4.jpg)
+![*Figura 6*. Efecto de tratamientos hormonales y térmicos sobre la germinabilidad en semillas de garbanzo (*Cicer arietinum* L.)](figure4.jpg)
 
 Se observa que el tratamiento térmico presenta el valor más alto de germinación (alrededor de 95-97%), seguido del tratamiento hormonal (aproximadamente 90%) y finalmente el testigo (alrededor de 80%). Las letras “a” sobre las barras indican que no hay diferencias estadísticamente significativas entre los tratamientos. Esto quiere decir que, aunque visualmente el tratamiento térmico muestra un mayor porcentaje de germinación (gtp) que los otros tratamientos, esas diferencias no son estadísticamente significativas, es decir, podrían deberse al azar o a la variabilidad natural de los datos.
 
