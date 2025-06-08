@@ -5,11 +5,15 @@ css: styles.css
 ---
 
 ## INTRODUCCIÓN
-El garbanzo (*Cicer arietinum*) es una leguminosa que desempeña un papel crucial en la seguridad alimentaria y la economía de muchas regiones del mundo. Originario del Suroeste de Turquía, su cultivo se ha extendido a lo largo de Asia, África y América, destacándose por su capacidad para tolerar condiciones de estrés hídrico, lo que lo convierte en un cultivo ideal para áreas agrícolas con limitaciones de agua, más del 90% de la producción mundial de garbanzo se concentra en Asia, especialmente en India, Pakistán y Turquía, lo que subraya su relevancia a nivel global, tanto como fuente alimentaria como por sus beneficios en la mejora de la calidad del suelo (@VARGAS2021).
+El garbanzo (*Cicer arietinum*) es una leguminosa que desempeña un papel crucial en la seguridad alimentaria y la economía de muchas regiones del mundo. Originario del Suroeste de Turquía, su cultivo se ha extendido a lo largo de Asia, África y América, destacándose por su capacidad para tolerar condiciones de estrés hídrico, lo que lo convierte en un cultivo ideal para áreas agrícolas con limitaciones de agua, más del 90% de la producción mundial de garbanzo se concentra en Asia, especialmente en India, Pakistán y Turquía, @VARGAS2021 subraya su relevancia a nivel global, tanto como fuente alimentaria como por sus beneficios en la mejora de la calidad del suelo.
 
-La germinación de las semillas de garbanzo puede verse afectada por la dormancia, un mecanismo de protección que impide que la semilla germine bajo condiciones no óptimas, esta dormancia física se debe, en gran medida, a la dureza de la testa de la semilla, lo que dificulta la penetración de agua y ralentiza el proceso germinativo, para superar esta barrera, es común utilizar métodos de escarificación, como el tratamiento térmico y la aplicación de hormonas, que aceleran la germinación y mejoran la uniformidad del proceso, en este sentido, la giberelina (GA), una hormona vegetal que estimula la germinación, ha demostrado ser eficaz para romper la dormancia de diversas especies vegetales, incluyendo las leguminosas (@FLORESM2020).
+La germinación de las semillas de garbanzo puede verse afectada por la dormancia, un mecanismo de protección que impide que la semilla germine bajo condiciones no óptimas, esta dormancia física se debe, en gran medida, a la dureza de la testa de la semilla, lo que dificulta la penetración de agua y ralentiza el proceso germinativo, para superar esta barrera, es común utilizar métodos de escarificación, como el tratamiento térmico y la aplicación de hormonas, que aceleran la germinación y mejoran la uniformidad del proceso, en este sentido, según @FLORESM2020la giberelina (GA), una hormona vegetal que estimula la germinación, ha demostrado ser eficaz para romper la dormancia de diversas especies vegetales, incluyendo las leguminosas .
 
 Este estudio tuvo como objetivo evaluar el impacto de dos tratamientos en la germinación de semillas de garbanzo: un tratamiento térmico, en el que las semillas fueron expuestas a agua caliente durante 5 minutos, y un tratamiento hormonal, que consistió en la aplicación de giberelina. El objetivo principal fue determinar el porcentaje de germinación bajo cada uno de estos tratamientos, evaluando también el tiempo necesario para que las semillas comenzaran a germinar. A través de la medición del índice de germinación, se buscó cuantificar la velocidad y uniformidad del proceso germinativo en cada caso, con la intención de identificar cuál de los tratamientos resulta más efectivo para optimizar la germinación y, por ende, mejorar el rendimiento del cultivo.
+
+## Hipótesis
+
+Se plantea que tanto el tratamiento térmico (agua hervida a 80°C) como el tratamiento hormonal (giberelina) mejorarán significativamente la germinación de las semillas de Cicer arietinum L. en comparación con el tratamiento control, reduciendo el tiempo de germinación y aumentando la sincronización y homogeneidad del proceso germinativo.
 
 ## MATERIALES Y MÉTODOS
 
@@ -131,7 +135,7 @@ label %>% label_print()
 
 ### Materiales
 
-- Semilla de Cicer arietinum L. (300 unidades) 
+- Semilla de *Cicer arietinum* L. (300 unidades) 
 - ⁠Tapers deplstico de 1/4 de kilo. 
 - ⁠Pepel toalla. 
 - ⁠Agua destilada. 
