@@ -14,9 +14,9 @@ website:
         text: Analisis
     tools:
       - icon: twitter
-        href: https://doi.org/10.3390/rs15051463
+        href: https://github.com/Gomezt13/semillas_u2.git
       - icon: github
-        href: https://github.com/Gomezt13/unidad_iii.git
+        href: https://github.com/Gomezt13/semillas_u2.git
   page-footer:
     right: "Built with [Quarto](https://quarto.org/)"
     left: "&copy; Copyright 2024, Programación y Análisis de Datos"
