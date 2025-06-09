@@ -178,7 +178,7 @@ Para este estudio, se empleó un diseño experimental completamente al azar (DCA
 
 ##	RESULTADOS
 
-En este estudio se evaluó el índice de germinación de las semillas de garbanzo (*Cicer arietinum*) mediante las siguientes variables: Semillas germinadas, Tiempo promedio de germinación, Índice de sincronización y Germinabilidad de cada tratamiento. Los resultados obtenidos en este estudio fueron los siguientes.
+En este estudio se evaluó el índice de germinación de las semillas de garbanzo (*Cicer arietinum*) mediante las siguientes variables: semillas germinadas, tiempo promedio de germinación, índice de sincronización y germinabilidad de cada tratamiento. Los resultados obtenidos en este estudio fueron los siguientes.
 
 ### Semillas germinadas
 
@@ -216,7 +216,7 @@ El boxplot muestra la distribución de la germinabilidad , donde el testigo y el
 
 ##	DISCUCIÓN 
 
-Este estudio evaluó el impacto de dos tratamientos en la germinación de semillas de Cicer arietinum L.: un tratamiento térmico (exposición a agua hervida a 80°C durante 5 minutos) y un tratamiento hormonal (aplicación de giberelina, GA). A pesar de que no se encontraron diferencias estadísticas significativas entre los tratamientos en cuanto al porcentaje total de germinación, el tratamiento térmico mostró una ligera ventaja en términos de rapidez de germinación, lo que sugiere que este tratamiento podría tener un efecto positivo en la aceleración del proceso germinativo. Este hallazgo es consistente con estudios previos, como los de @ozga-2016, quienes reportaron que la exposición de semillas de garbanzo a temperaturas cercanas a los 80°C redujo el tiempo de germinación sin afectar negativamente la tasa total de germinación.
+Este estudio evaluó el impacto de dos tratamientos en la germinación de semillas de *Cicer arietinum* L.: un tratamiento térmico (exposición a agua hervida a 80°C durante 5 minutos) y un tratamiento hormonal (aplicación de giberelina, GA). A pesar de que no se encontraron diferencias estadísticas significativas entre los tratamientos en cuanto al porcentaje total de germinación, el tratamiento térmico mostró una ligera ventaja en términos de rapidez de germinación, lo que sugiere que este tratamiento podría tener un efecto positivo en la aceleración del proceso germinativo. Este hallazgo es consistente con estudios previos, como los de @ozga-2016, quienes reportaron que la exposición de semillas de garbanzo a temperaturas cercanas a los 80°C redujo el tiempo de germinación sin afectar negativamente la tasa total de germinación.
 
 En cuanto al índice de germinación, el tratamiento térmico demostró una mayor homogeneidad en la germinación de las semillas, lo que se refleja en una menor dispersión en la germinación en comparación con los otros tratamientos. Este hallazgo es coherente con lo reportado por @carneiro1990, quienes observaron que el tratamiento térmico en garbanzo aceleró el proceso de germinación sin afectar negativamente la tasa de germinación. Sin embargo, la diferencia no fue significativa, lo que indica que, en términos generales, ambos tratamientos (térmico y hormonal) son igualmente efectivos para mejorar la germinación de las semillas de garbanzo, sin una ventaja clara en cuanto al porcentaje total de germinación.
 
