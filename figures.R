@@ -33,3 +33,25 @@ top %>% ggsave2(plot = .
                 , width = 20
                 , height = 9
 )
+
+plot1 <- readJPEG("img1.jpg") %>% grid::rasterGrob()
+plot2 <- readJPEG("img2.jpg") %>% grid::rasterGrob()
+plot3 <- readJPEG("img3.jpg") %>% grid::rasterGrob()
+plot4 <- readJPEG("img4.jpg") %>% grid::rasterGrob()
+plot5 <- readJPEG("img5.jpg") %>% grid::rasterGrob()
+
+
+## Grid plots
+
+top1 <- list(plot1, plot2, plot3, plot4, plot5) %>% 
+  plot_grid(plotlist = .
+            , labels = "AUTO"
+            , nrow = 1
+  )
+
+top1 %>% ggsave2(plot = .
+                , filename = "Figure-11.jpg"
+                , units = "cm"
+                , width = 33
+                , height = 9
+)
